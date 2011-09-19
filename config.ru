@@ -6,9 +6,9 @@ Sinatra::Application.default_options.merge!(
   :env => :production
 )
 
-log = File.new("log/sinatra.log", "w")
-STDOUT.reopen(log)
-STDERR.reopen(log)
+# log = File.new("log/sinatra.log", "w")
+# STDOUT.reopen(log)
+# STDERR.reopen(log)
 
 require 'index.rb'
 run Sinatra.application
