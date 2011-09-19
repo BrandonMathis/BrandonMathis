@@ -1,14 +1,13 @@
 require 'rubygems'
-require 'vendor/sinatra/lib/sinatra.rb'
+require 'sinatra'
 
-Sinatra::Application.default_options.merge!(
-  :run => false,
-  :env => :production
-)
+set :run, false
+set :environment, :production
+set :views, "views"
 
-# log = File.new("log/sinatra.log", "w")
-# STDOUT.reopen(log)
-# STDERR.reopen(log)
+log = File.new("log/sinatra.log", "w")
+STDOUT.reopen(log)
+STDERR.reopen(log)
 
 require 'index.rb'
 run Sinatra.application
