@@ -1,13 +1,20 @@
-set :application, "Ellen"
+require 'bundler/capistrano'
+
+set :application, "ellenmathis.me"
 
 set :repository,  "."
 set :scm, :git
 set :deploy_to, application
 set :deploy_via, :copy
 
-role :web, "ellenmathis.me"                          # Your HTTP server, Apache/etc
-role :app, "ellenmathis.me"                          # This may be the same as your `Web` server
+role :web, "keysetts.com"                            # Your HTTP server, Apache/etc
 
-set :user, "mathiswe"
+set :user, "bemathis"
 
 set :use_sudo, false
+
+namespace :deploy do
+  task :restart do
+    run "touch #{current_path}/tmp/restart.txt" 
+  end
+end
