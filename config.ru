@@ -1,5 +1,4 @@
-require 'rubygems'
-require 'sinatra'
+require 'index.rb'
 
 set :run, false
 set :environment, :production
@@ -9,5 +8,4 @@ log = File.new("log/sinatra.log", "w")
 STDOUT.reopen(log)
 STDERR.reopen(log)
 
-require 'index.rb'
-run Sinatra.application
+run Sinatra::Application
