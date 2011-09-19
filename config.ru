@@ -8,3 +8,7 @@ Sinatra::Application.default_options.merge!(
 
 require 'index.rb'
 run Sinatra.application
+
+log = File.new("log/sinatra.log", "w")
+STDOUT.reopen(log)
+STDERR.reopen(log)
