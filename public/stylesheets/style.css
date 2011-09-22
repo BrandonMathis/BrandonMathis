@@ -1,0 +1,10 @@
+body{
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: Palatino;
+  font-size: 50px;
+}
+
+#hello{
+  margin-top: 200px;
+}

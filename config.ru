@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'index.rb'
 
 set :run, false
