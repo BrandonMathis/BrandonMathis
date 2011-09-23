@@ -2,5 +2,5 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
-  haml :ellen
+  haml :brandon
 end
