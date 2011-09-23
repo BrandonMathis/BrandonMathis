@@ -9,7 +9,7 @@ default_run_options[:pty] = true
 # be sure to change these
 set :user, 'bemathis'
 set :domain, 'keysetts.com'
-set :application, 'ellenmathis.me'
+set :application, 'brandonmathis.me'
 
 # the rest should be good
 set :repository,  "." 
