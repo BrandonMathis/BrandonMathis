@@ -9,7 +9,7 @@ default_run_options[:pty] = true
 # be sure to change these
 set :user, 'bemathis'
 set :domain, 'keysetts.com'
-set :application, 'brandonmathis.me'
+set :application, 'ellenmathis.me'
 
 # the rest should be good
 set :repository,  "." 
@@ -28,7 +28,9 @@ namespace :deploy do
     run "touch #{current_path}/tmp/restart.txt" 
   end
 
-  task :symlink do
+  task :linkbundle do
     run "ln -nfs #{shared_path}/bundle/ruby #{current_path}/vendor/ruby"
   end
 end
+
+after "deploy:symlink","deploy:linkbundle"
