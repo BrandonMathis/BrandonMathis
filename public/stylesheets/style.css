@@ -1,15 +1,17 @@
 body{
-  border: solid 2px;
-  background-color: #f9f9f9;
+  background: url(/images/bglines.png);
   text-align: center;
   font-family: Palatino;
   font-size: 50px;
 }
 
 #hello{
+  width: 800px;
+  height: 450px;
+  background-color: #f9f9f9;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -55px;
-  margin-left: -225px;
+  margin-top: -225px;
+  margin-left: -400px;
 }
