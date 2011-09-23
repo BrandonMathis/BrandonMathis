@@ -2,16 +2,28 @@ body{
   background: url(/images/bglines.png);
   text-align: center;
   font-family: Palatino;
-  font-size: 50px;
+  font-size: 14px;
 }
 
 #hello{
   width: 800px;
   height: 450px;
-  background-color: #f9f9f9;
+  background-color: #FFFFFE;
   position: fixed;
   top: 50%;
   left: 50%;
   margin-top: -225px;
   margin-left: -400px;
+  border: solid 1px grey;
+  border-radius: 5px;
+}
+
+h1{
+  font-size: 70px;
+  font-weight: normal;
+}
+
+#title{
+  font-size: 20px;
+  font-weight: bold;
 }
