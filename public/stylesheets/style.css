@@ -5,6 +5,15 @@ body{
   font-size: 14px;
 }
 
+@-webkit-keyframes fade {
+ 0% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 1;
+ }
+}
+
 #hello{
   width: 800px;
   height: 450px;
@@ -16,6 +25,10 @@ body{
   margin-left: -400px;
   border: solid 1px grey;
   border-radius: 5px;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
 h1{
