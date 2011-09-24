@@ -1,3 +1,7 @@
+h1{
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
 body{
   background: url(/images/bglines.png);
   text-align: center;
