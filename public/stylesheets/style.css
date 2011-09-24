@@ -27,3 +27,13 @@ h1{
   font-size: 20px;
   font-weight: bold;
 }
+
+#seperator{
+  height: 80px;
+  margin: 0 30px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVQIHWNIS0sr/v//PwMMDzY+ADqMahlW4J91AAAAAElFTkSuQmCC') center left repeat-x;
+}
+
+#social table{
+  margin: 0 auto;
+}
