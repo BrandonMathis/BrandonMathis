@@ -46,11 +46,15 @@ h1{
 }
 
 #seperator{
-  height: 60px;
+  height: 40px;
   margin: 0 30px;
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVQIHWNIS0sr/v//PwMMDzY+ADqMahlW4J91AAAAAElFTkSuQmCC') center left repeat-x;
 }
 
 #social table{
   margin: 0 auto;
+}
+
+.perfect_website{
+  color: #888888;
 }
