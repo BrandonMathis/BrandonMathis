@@ -2,5 +2,5 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
-  haml :brandon
+  File.read(File.join('public', 'blackout.html'))
 end
