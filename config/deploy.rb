@@ -33,4 +33,4 @@ namespace :deploy do
   end
 end
 
-after "deploy:symlink","deploy:linkbundle"
+after :deploy, "deploy:linkbundle"
