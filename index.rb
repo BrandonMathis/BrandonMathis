@@ -1,6 +1,11 @@
-require 'vendor/ruby/1.8/gems/sinatra-1.0/lib/sinatra'
-require 'haml'
+require 'rubygems'
+require 'bundler'
 
-get '/' do
-  haml :brandon
+class BrandonMathis < Sinatra::Base
+  set :root, File.dirname(__FILE__)
+  set :public, 'public'
+
+  get '/' do
+    haml :brandon
+  end
 end

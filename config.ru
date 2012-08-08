@@ -1,12 +1,8 @@
 require 'rubygems'
-require 'index.rb'
+require 'bundler'
 
-set :run, false
-set :environment, :production
-set :views, "views"
+Bundler.require
 
-log = File.new("log/sinatra.log", "w")
-STDOUT.reopen(log)
-STDERR.reopen(log)
+require './index'
 
-run Sinatra::Application
+run BrandonMathis
