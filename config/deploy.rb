@@ -4,6 +4,8 @@ load 'deploy' if respond_to?(:namespace) # cap2 differentiator
 
 set :default_environment, {'PATH' => '/home/bemathis/.gems:/usr/lib/ruby/gems/1.8:/home/bemathis/bin:/home/bemathis/.gems/bin:/home/bemathis/.gems/bin:/usr/lib/ruby/gems/1.8/bin/:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games'}
 
+ssh_options[:forward_agent] = true
+
 default_run_options[:pty] = true
 
 # be sure to change these
@@ -12,9 +14,9 @@ set :domain, 'keysetts.com'
 set :application, 'brandonmathis.me'
 
 # the rest should be good
-set :repository,  "." 
+set :repository,  "git://github.com/BrandonMathis/BrandonMathis.git" 
 set :deploy_to, "/home/#{user}/#{application}"
-set :deploy_via, :copy
+set :deploy_via, :remote_cache
 set :scm, 'git'
 set :branch, 'master'
 set :git_shallow_clone, 1
