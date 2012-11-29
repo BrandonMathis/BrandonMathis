@@ -45,6 +45,11 @@ h1{
   font-weight: bold;
 }
 
+#title > p > a {
+  color: black;
+  text-decoration: none;
+}
+
 #seperator{
   height: 40px;
   margin: 0 30px;
