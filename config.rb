@@ -2,6 +2,14 @@
 # Compass
 ###
 
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.user = "bemathis"
+  deploy.host = "brandonmathis.me"
+  deploy.path = "/var/www/BrandonMathis"
+  deploy.port = "44"
+end
+
 # Susy grids in Compass
 # First: gem install susy
 # require 'susy'
