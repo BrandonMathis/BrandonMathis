@@ -1,5 +1,6 @@
-source 'https://rubygems.org'
+# If you have OpenSSL installed, we recommend updating
+# the following line to use "https"
+source 'http://rubygems.org'
 
-gem 'sinatra', '1.0', :require => 'sinatra/base'
-gem 'haml', '3.1.3'
-gem 'unicorn'
+gem "middleman", "~>3.0.14"
+gem "middleman-deploy"
