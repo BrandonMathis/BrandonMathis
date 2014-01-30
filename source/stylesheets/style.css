@@ -19,6 +19,7 @@ body{
 }
 
 #hello{
+  box-shadow: 5px 5px 10px #9B9898;
   width: 800px;
   height: 450px;
   background-color: #FFFFFE;
