@@ -8,13 +8,6 @@ body
   font-family: Palatino
   font-size: 14px
 
-#doge
-  color: rgba(255, 255, 255, 0.6)
-  font-size: 30px
-  bottom: 0
-  right: 10px
-  position: fixed
-
 #hello
   box-shadow: 0px 0px 10px #184363
   width: 800px
@@ -26,7 +19,7 @@ body
   margin-top: -225px
   margin-left: -400px
   -webkit-animation-name: fade
-  -webkit-animation-duration: 2.5s
+  -webkit-animation-duration: 3s
   -webkit-animation-iteration-count: 1
   -webkit-animation-timing-function: ease-in-out
 
@@ -59,3 +52,8 @@ h1
 .perfect_website
   color: #888888
 
+@-webkit-keyframes fade
+  0%
+    opacity: 0
+  100%
+    opacity: 1
