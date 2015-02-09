@@ -16,59 +16,52 @@ body
   font-family: Nexa Light
   font-size: 16px
 
-#content
+a
+  color: black
+  text-decoration: none
+
+.content
   position: fixed
   top: 50%
   left: 50%
   margin-top: -225px
   margin-left: -400px
-  .card
-    float: left
-    box-shadow: 0px 0px 10px #184363
-    width: 800px
-    background-color: #FFFFFE
-    -webkit-animation-name: fade
-    -webkit-animation-duration: 3s
-    -webkit-animation-iteration-count: 1
-    -webkit-animation-timing-function: ease-in-out
-    .card-body
-      padding: 55px 0
-  #me
-    padding-left: 20px
-    overflow: hidden
-    float: left
+
+.card
+  float: left
+  box-shadow: 0px 0px 10px #184363
+  width: 800px
+  background-color: #FFFFFE
+  -webkit-animation-name: fade
+  -webkit-animation-duration: 3s
+  -webkit-animation-iteration-count: 1
+  -webkit-animation-timing-function: ease-in-out
+  .card-body
+    padding: 55px 0
+  .card-name
+    font-size: 32px
+    font-weight: normal
+  .card-title
+    font-size: 20px
+    font-weight: bold
+  .perfect_website
+    color: #888888
+  .card-seperator
+    height: 30px
+    margin: 0 30px
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVQIHWNIS0sr/v//PwMMDzY+ADqMahlW4J91AAAAAElFTkSuQmCC') center left repeat-x
+  .card-social
+    ul
+      padding: 0px
+    li
+      display: inline
+      list-style-type: none
 
 
-#name
-  font-size: 32px
-  font-weight: normal
-
-
-#title
-  font-size: 20px
-  font-weight: bold
-
-
-a
-  color: black
-  text-decoration: none
-
-
-#seperator
-  height: 30px
-  margin: 0 30px
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAABCAYAAACsXeyTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAFUlEQVQIHWNIS0sr/v//PwMMDzY+ADqMahlW4J91AAAAAElFTkSuQmCC') center left repeat-x
-
-
-#social
-  ul
-    padding: 0px
-  li
-    display: inline
-    list-style-type: none
-
-.perfect_website
-  color: #888888
+#me
+  padding-left: 20px
+  overflow: hidden
+  float: left
 
 @-webkit-keyframes fade
   0%
