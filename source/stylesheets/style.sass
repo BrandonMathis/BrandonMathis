@@ -6,14 +6,15 @@
   src: url('/fonts/nexa_bold.otf') format('opentype')
 
 h1
-  margin-top: 0.5em
-  margin-bottom: 0.5em
+  margin: 0em
+ul
+  margin: 0em
 
 body
   background: #4682b4
   text-align: center
   font-family: Nexa Light
-  font-size: 14px
+  font-size: 16px
 
 #content
   position: fixed
@@ -21,24 +22,25 @@ body
   left: 50%
   margin-top: -225px
   margin-left: -400px
-  #hello
+  .card
     float: left
     box-shadow: 0px 0px 10px #184363
     width: 800px
-    height: 450px
     background-color: #FFFFFE
     -webkit-animation-name: fade
     -webkit-animation-duration: 3s
     -webkit-animation-iteration-count: 1
     -webkit-animation-timing-function: ease-in-out
+    .card-body
+      padding: 55px 0
   #me
     padding-left: 20px
     overflow: hidden
     float: left
 
 
-h1
-  font-size: 70px
+#name
+  font-size: 32px
   font-weight: normal
 
 
